@@ -1,4 +1,4 @@
-class VideosController < ApplicationController
+class Api::V1::VideosController < ApplicationController
   before_action :set_video, only: [:show, :update, :destroy]
 
   # GET /videos
