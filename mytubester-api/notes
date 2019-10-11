@@ -1,0 +1,26 @@
+User Stories
+
+Users should be able to:
+  - Sign up and log in
+  - Look up videos
+    - Show a list of videos
+  - Open and view a video in its own page
+  - Add videos to favorites
+
+
+MODELS
+## User
+  has_many :videos
+    username::string
+    email::string
+    password_digest:string
+
+## Video
+  belongs_to :user
+    title::string 
+    description::string
+    duration::time
+    uploaded_by::string
+    uploaded_at::datetime
+
+    
