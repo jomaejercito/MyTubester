@@ -22,10 +22,12 @@ ActiveRecord::Schema.define(version: 2) do
 
   create_table "videos", force: :cascade do |t|
     t.string "title"
+    t.string "video_url"
     t.string "description"
     t.time "duration"
     t.string "uploaded_by"
     t.datetime "uploaded_at"
+    t.integer "views"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
