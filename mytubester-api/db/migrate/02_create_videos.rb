@@ -8,6 +8,7 @@ class CreateVideos < ActiveRecord::Migration[6.0]
       t.string :uploaded_by
       t.datetime :uploaded_at
       t.integer :views
+      t.integer :user_id
 
       t.timestamps
     end

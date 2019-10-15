@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2) do
     t.string "uploaded_by"
     t.datetime "uploaded_at"
     t.integer "views"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
