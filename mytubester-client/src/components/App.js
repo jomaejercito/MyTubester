@@ -1,6 +1,7 @@
 import React from 'react';
 import Videos from './Videos.js';
 
+
 const API_URL = process.env.REACT_APP_API_URL;
 // const videos = [
 //   {
@@ -28,8 +29,10 @@ class App extends React.Component {
   
   render() {
     return (
-      <div className="App">
-        <Videos videos={this.state.videos} />
+      <div className="ui container">
+        <div className="App">
+          <Videos videos={this.state.videos} />
+        </div>
       </div>
     );
   }

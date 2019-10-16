@@ -1,16 +1,18 @@
 import React from 'react';
+import VideoCard from './VideoCard';
+import SearchBar from './SearchBar';
 
-const Videos = (props) => (
-  <div className="VideosContainer">
-    <h1>MyTubester</h1>
-    {props.videos.map(video =>
-      <div className="VideoCard">
-        <h3>{video.title}</h3>
-        <p>{video.description}</p>
-        <p>{video.video_url}</p>
+
+class Videos extends React.Component  {
+  render() {
+    return (
+      <div className="VideosContainer">
+        <h1>MyTubester</h1>
+        {this.props.videos.map(video => <VideoCard key={video.id} video={video} />)}
+        <SearchBar />
       </div>
-    )}
-  </div>
-);
+    );
+  }
+}
 
 export default Videos;
