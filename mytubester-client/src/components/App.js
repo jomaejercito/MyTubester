@@ -21,7 +21,7 @@ class App extends React.Component {
   }
   
   componentDidMount() {
-    fetch(`${API_URL}/searches`)
+    fetch(`${API_URL}/video_search`)
       .then(response => response.json())
       .then(videos => this.setState({videos}))
   }
