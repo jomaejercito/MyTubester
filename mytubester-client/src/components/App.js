@@ -3,14 +3,6 @@ import Videos from './Videos.js';
 
 
 const API_URL = process.env.REACT_APP_API_URL;
-// const videos = [
-//   {
-//     title: "Britney Spears - Toxic (Official Music Video)",
-//     description: "Britney Spears official music video for Toxic.",
-//     video_url: "https://www.youtube.com/watch?v=LOZuxwVk7TU"
-//   }
-// ]
-
 
 class App extends React.Component {
   constructor(props) {

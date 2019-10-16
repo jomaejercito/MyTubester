@@ -1,9 +1,14 @@
 import React from 'react';
 import VideoCard from './VideoCard';
 import SearchBar from './SearchBar';
-
+import { connect } from 'react-redux';
+import { getVideos } from '../actions/videos';
 
 class Videos extends React.Component  {
+  componentDidMount() {
+    this.props.getVideos()
+  }
+
   render() {
     return (
       <div className="VideosContainer">
@@ -15,4 +20,10 @@ class Videos extends React.Component  {
   }
 }
 
-export default Videos;
+const mapStateToProps = (state) => {
+  return ({
+    videos: state.videos
+  })
+}
+
+export default connect(mapStateToProps, {getVideos})(Videos);

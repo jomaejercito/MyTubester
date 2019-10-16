@@ -4,7 +4,7 @@ import App from './components/App';
 import store from './store.js';
 import { Provider } from 'react-redux';
 
-
+console.log(store)
 
 
 ReactDOM.render(
